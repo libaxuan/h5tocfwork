@@ -1,0 +1,5 @@
+name = "h5towork"  # 替换为你的 Worker 名称
+type = "javascript"
+account_id = "1fa4a41fa2ddd8803ce72aabee465b12"  # 替换为你的 Cloudflare 账户 ID
+workers_dev = true
+main = "work.js"  # 入口文件路径
