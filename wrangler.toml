@@ -1,5 +1,15 @@
-name = "h5towork"  # 替换为你的 Worker 名称
-type = "javascript"
+name = "h5towork"  # Worker 的名称（确保全局唯一）
 account_id = "1fa4a41fa2ddd8803ce72aabee465b12"  # 替换为你的 Cloudflare 账户 ID
-workers_dev = true
+compatibility_date = "2025-03-06"  # 兼容性日期（必须添加）
 main = "work.js"  # 入口文件路径
+workers_dev = true  # 开启 Workers Dev 环境（开发测试用）
+# route = "your.subdomain.workers.dev"  # 可选：指定 Workers Dev 子域名（如需自定义）
+
+# 以下是可选但推荐的配置
+# 如果部署到生产环境，需指定路由或域名
+# route = "/*"  # 部署到自定义域名时的路由规则
+# zone_id = "your-zone-id"  # 若绑定到现有域名，需指定对应的 Zone ID
+
+# 其他高级配置（根据需求选择）
+# upstash_redis_url = "redis://..."  # 若使用 Upstash Redis
+# node_compat = true  # 启用 Node.js 兼容模式（如需）
